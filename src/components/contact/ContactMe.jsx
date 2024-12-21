@@ -29,7 +29,12 @@ function ContactMe() {
           <textarea id="message" name="message" type="text" placeholder='Write your message here...'  required></textarea>
         </div>
 
-        <button className="submit-btn">
+        <p style="display:none;">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+
+
+        <button type='submit' className="submit-btn">
           <FaTelegramPlane className='icon' />
           Send Message
         </button>

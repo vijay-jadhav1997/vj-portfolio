@@ -10,8 +10,7 @@ function ContactMe() {
       <div className="contact-img-wrapper">
         <img src={contact} alt="Contact" />
       </div>
-      <form className="form-wrapper" name='contact' method='POST' data-netlify='true' netlify-honeypot='bot-field'>
-        <input type="hidden" name='form-name' value='contact' />
+      <form className="form-wrapper" name='contact' method='POST' data-netlify='true'>
         <div className="input-box">
           <label htmlFor="name">Name:</label> <br />
           <FaUser className='icon' />
@@ -28,11 +27,6 @@ function ContactMe() {
           <label htmlFor="message">Message:</label> <br />
           <textarea id="message" name="message" type="text" placeholder='Write your message here...'  required></textarea>
         </div>
-
-        <p style="display:none;">
-          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-        </p>
-
 
         <button type='submit' className="submit-btn">
           <FaTelegramPlane className='icon' />

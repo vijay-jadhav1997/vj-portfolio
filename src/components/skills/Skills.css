@@ -1,0 +1,226 @@
+#skills {
+  /* overflow: hidden; */
+  width: 100%;
+  max-width: 80rem;
+  /* max-width: 75rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem 2rem;
+  margin: 0 auto;
+  background-color: #7b64fc28;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin: 1rem auto 1.5rem;
+  text-align: center;
+}
+
+.skills-description {
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 60rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  /* text-align: center; */
+  color: #c7c7c7;
+}
+
+
+.skills-container .frontend,
+.skills-container .database,
+.skills-container .other,
+.skills-container .backend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 2.25rem;
+  column-gap: 2rem;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.skills-container .img-wrapper {
+  max-width: 90px;
+}
+
+.skills-container .other .img-wrapper {
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+}
+  
+.skills-container img {
+  width: 100%;
+}
+
+.skills-container .skills-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  color: #fff;
+}
+  
+.skills-container .frontend .skill h4,
+.skills-container .database .skill h4,
+.skills-container .other .skill h4,
+.skills-container .backend .skill h4 {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+  
+
+.skills-slider1,
+.skills-slider2 {
+  height: var(--item-height);
+  /* border: 2px solid lightgray;
+  border-left: none;
+  border-right: none; */
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 65rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #aeaeb8 15% 85%, transparent);
+  height: 50px;
+}
+.skills-slider2 {
+  margin-top: 1rem;
+  height: 70px;
+  /* background-color: #ff2050; */
+}
+
+.skills-slider1 .list,
+.skills-slider2 .list {
+  width: 100%;
+  min-width: calc(var(--item-width) * var(--quantity));
+  display: flex;
+  position: relative;
+}
+
+.list span.item,
+.list div.item {
+  width: var(--item-width);
+  position: absolute;
+  left: 101%;
+  top: 0;
+  transition: filter 0.5s ease-in-out;
+  animation-delay: calc((24s / var(--quantity)) * (var(--position) - 1))!important;
+}
+
+@keyframes auto_run {
+  from {
+    left: 105%;
+  }
+  to {
+    left: calc(var(--item-width) * -1)
+  }
+}
+
+.list span.item {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid lightblue;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #3e7d68;
+  animation: auto_run 24s linear infinite;
+  cursor: default;
+}
+
+.list div.item {
+  animation: auto_run2 24s linear infinite;
+}
+
+@keyframes auto_run2 {
+  from {
+    left: calc(var(--item-width) * -1)
+  }
+  to {
+    left: 130%;
+  }
+}
+
+
+.skills-slider1 .list:hover span.item,
+.skills-slider2 .list:hover div.item {
+  animation-play-state: paused!important;
+}
+
+.skills-slider1 .list span.item:hover {
+  box-shadow: 0 0 15px #f4b5f4;
+}
+
+.skills-slider2 .list div.item:hover {
+  filter: drop-shadow(0 0 50px #83a4f2);
+}
+
+.list div.item img {
+  width: 100%;
+}
+
+
+@media screen and (max-width:720px) {
+  .skills-heading {
+    font-size: 2rem;
+  }
+  .skills-description {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+  }
+
+  .skills-container .img-wrapper {
+    max-width: 70px;
+  }
+  
+}
+
+
+@media screen and (max-width:500px) {
+  #skills {
+    padding: 0 0.5rem 2rem;
+  }
+  .skills-heading {
+    font-size: 1.3rem;
+    margin: 1rem auto;
+  }
+  .skills-description {
+    font-size: 1rem;
+  }
+
+  .skills-container .other .img-wrapper {
+    max-width: 50px;
+  }
+  
+  .skills-container .skills-title {
+    font-size: 1.25rem;
+  }
+  
+  .skills-container .frontend .skill h4,
+  .skills-container .database .skill h4,
+  .skills-container .other .skill h4,
+  .skills-container .backend .skill h4 {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+  .skills-heading {
+    font-size: 1.35rem;
+  }
+  .skills-description {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    padding: 0.5rem 1rem;
+  }
+  
+}

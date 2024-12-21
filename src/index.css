@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: Arial, sans-serif;
+}
+
+
+html {
+  scrollbar-width: thin;
+  background-color: #020537;
+  color: #d3d3d3;
+}
+
+body {
+  width: 100%;
+}

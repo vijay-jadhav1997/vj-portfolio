@@ -10,7 +10,7 @@ function ContactMe() {
       <div className="contact-img-wrapper">
         <img src={contact} alt="Contact" />
       </div>
-      <form className="form-wrapper" name='contact' method='POST' data-netlify='true' netlify-honeypot='bot-field'>
+      <form className="form-wrapper" name='contact' method='POST'>
         <input type="hidden" name='form-name' value="contact" />
         <div className="input-box">
           <label htmlFor="name">Name:</label> <br />

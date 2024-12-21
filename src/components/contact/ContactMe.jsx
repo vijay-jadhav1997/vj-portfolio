@@ -10,7 +10,7 @@ function ContactMe() {
       <div className="contact-img-wrapper">
         <img src={contact} alt="Contact" />
       </div>
-      <form className="form-wrapper" name='contactUS' netlify>
+      <form className="form-wrapper" name='contact' netlify>
         <div className="input-box">
           <label htmlFor="name">Name:</label> <br />
           <FaUser className='icon' />

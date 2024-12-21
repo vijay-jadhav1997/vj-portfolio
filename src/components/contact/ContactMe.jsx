@@ -10,17 +10,17 @@ function ContactMe() {
       <div className="contact-img-wrapper">
         <img src={contact} alt="Contact" />
       </div>
-      <form className="form-wrapper" name='contactUS'>
+      <form className="form-wrapper" name='contactUS' data-netlify='true'>
         <div className="input-box">
           <label htmlFor="name">Name:</label> <br />
           <FaUser className='icon' />
-          <input id="name" name="" type="text" placeholder="Raghav Das" />
+          <input id="name" name="name" type="text" placeholder="Raghav Das" />
         </div>
         
         <div className="input-box">
           <label htmlFor="email">Email:</label> <br />
           <MdEmail className='icon' />
-          <input id="email" name="" type="email" placeholder="raghuvardas24@gmail.com" />
+          <input id="email" name="email" type="email" placeholder="raghuvardas24@gmail.com" />
         </div>
         
         <div className="input-box">

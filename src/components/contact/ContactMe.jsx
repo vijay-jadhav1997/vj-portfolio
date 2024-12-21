@@ -10,22 +10,23 @@ function ContactMe() {
       <div className="contact-img-wrapper">
         <img src={contact} alt="Contact" />
       </div>
-      <form className="form-wrapper" name='contact' netlify>
+      <form className="form-wrapper" name='contact' method='POST' data-netlify='true' netlify-honeypot='bot-field'>
+        <input type="hidden" name='form-name' value='contact' />
         <div className="input-box">
           <label htmlFor="name">Name:</label> <br />
           <FaUser className='icon' />
-          <input id="name" name="name" type="text" placeholder="Raghav Das" />
+          <input id="name" name="name" type="text" placeholder="Raghav Das" required />
         </div>
         
         <div className="input-box">
           <label htmlFor="email">Email:</label> <br />
           <MdEmail className='icon' />
-          <input id="email" name="email" type="email" placeholder="raghuvardas24@gmail.com" />
+          <input id="email" name="email" type="email" placeholder="raghuvardas24@gmail.com" required />
         </div>
         
         <div className="input-box">
           <label htmlFor="message">Message:</label> <br />
-          <textarea id="message" name="message" type="text" ></textarea>
+          <textarea id="message" name="message" type="text" placeholder='Write your message here...'  required></textarea>
         </div>
 
         <button className="submit-btn">

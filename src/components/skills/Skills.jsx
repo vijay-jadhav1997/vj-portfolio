@@ -200,13 +200,13 @@ const Skills = () => {
           <div className="item" style={{'--position': '8'}}><img src={bootstrap} alt="Bootstrap" /></div>
           <div className="item" style={{'--position': '9'}}><img src={python} alt="Python" /></div>
           <div className="item" style={{'--position': '10'}}><img src={django} alt="Django" /></div>
-          <div className="item" style={{'--position': '11', backgroundColor: '#fff', padding: '2px'}}><img src={restframework} alt="Django Rest Framework" /></div>
+          <div className="item" style={{'--position': '11', backgroundColor: '#fff', padding: '2px', borderRadius: '5px'}}><img src={restframework} alt="Django Rest Framework" /></div>
           <div className="item" style={{'--position': '12'}}><img src={sql} alt="SQL" /></div>
           <div className="item" style={{'--position': '13'}}><img src={postgresql} alt="Postgra SQL" /></div>
           <div className="item" style={{'--position': '14'}}><img src={redis} alt="Redis" /></div>
-          <div className="item" style={{'--position': '15', backgroundColor: '#fff', padding: '2px'}}><img src={git} alt="Git" /></div>
-          <div className="item" style={{'--position': '16', backgroundColor: '#fff', padding: '2px'}}><img src={github} alt="GitHub" /></div>
-          <div className="item" style={{'--position': '17', backgroundColor: '#fff', padding: '2px'}}><img src={npm} alt="npm" /></div>
+          <div className="item" style={{'--position': '15', backgroundColor: '#fff', padding: '2px', borderRadius: '5px'}}><img src={git} alt="Git" /></div>
+          <div className="item" style={{'--position': '16', backgroundColor: '#fff', padding: '2px', borderRadius: '5px'}}><img src={github} alt="GitHub" /></div>
+          <div className="item" style={{'--position': '17', backgroundColor: '#fff', padding: '2px', borderRadius: '5px'}}><img src={npm} alt="npm" /></div>
         </div>
       </div>
     </section>

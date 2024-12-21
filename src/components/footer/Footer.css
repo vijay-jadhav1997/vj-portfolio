@@ -1,6 +1,6 @@
 footer {
   /* margin: 5rem 0; */
-  padding: 3rem 1rem;
+  padding: 2rem 1rem 3rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,12 @@ footer {
 
 footer h3 {
   font-size: 2.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 20px #f434d4,
+  0 0 40px #94fa87, 0 0 80px #87fabb;
+  /* -webkit-box-reflect: below 0px; */
+  -webkit-box-reflect:  below 1px linear-gradient(transparent 30%, #f997f9c8);
 }
 
 footer .footer-social-medias {

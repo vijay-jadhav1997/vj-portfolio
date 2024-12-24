@@ -59,14 +59,29 @@ function Projects() {
        
       </div>
       
-      <div className="project track-expenses left tab">
+      <div className="project indic-product left">
         <div>
           <div className="project-img-wrapper">
-            <span className="tooltip"><span></span><a target='_blank' href="https://track-your-expenses-livid.vercel.app/">Track Expenses <FaExternalLinkAlt /></a> </span>
-            <img src={expenses} alt="Track Expenses" />
+            <span className="tooltip"><span></span><a target='_blank' href="https://vijayjadhav1997.pythonanywhere.com/">Indic Products <FaExternalLinkAlt /></a> </span>
+            <img src={indic_products} alt="Explore Nation" />
           </div>
           <div className="connecting-line"><span></span></div>
         </div>
+        <div className="project-intro">
+          <h3 className="project-title"><a target='_blank' href="">Indic Products</a></h3>
+          <a target='_blank' href="https://github.com/vijay-jadhav1997/E-Commerce.git" className="github-link">(Github - Indic_Products)</a>
+          <p className="project-details">Indic Products, a Django-based e-commerce platform where users can create accounts to buy and sell various products. The platform supports seamless product listings, secure transactions, and personalized experiences for both buyers and sellers.</p>
+          <ul className='tech-stack'>
+            <li>Python</li>
+            <li>Django</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS (ES6+)</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div className="project track-expenses right tab">
         <div className="project-intro">
           <h3 className="project-title"><a target='_blank' href="https://track-your-expenses-livid.vercel.app/">Track Your Expenses</a></h3>
           <a target='_blank' href="https://github.com/vijay-jadhav1997/react-projects/tree/main/track-your-expenses" className="github-link">(Github - track_your_expenses)</a>
@@ -79,10 +94,25 @@ function Projects() {
             <li>vite</li>
           </ul>
         </div>
-
+        
+        <div>
+          <div className="project-img-wrapper">
+            <span className="tooltip"><span></span><a target='_blank' href="https://track-your-expenses-livid.vercel.app/">Track Expenses <FaExternalLinkAlt /></a> </span>
+            <img src={expenses} alt="Track Expenses" />
+          </div>
+          <div className="connecting-line"><span></span></div>
+        </div>
       </div>
       
-      <div className="project shoe-company right tab">
+      <div className="project shoe-company left tab">
+        <div>
+          <div className="project-img-wrapper">
+            <span className="tooltip"><span></span><a target='_blank' href="https://tailwind-css-projects.vercel.app/">ShoeCompany <FaExternalLinkAlt /></a> </span>
+            <img src={shoe_company} alt="Shoe Company" />
+          </div>
+          <div className="connecting-line"><span></span></div>
+        </div>
+        
         <div className="project-intro">
           <h3 className="project-title"><a target='_blank' href="https://tailwind-css-projects.vercel.app/">Shoe Company</a></h3>
           <a target='_blank' href="https://github.com/vijay-jadhav1997/Tailwind_CSS_Projects" className="github-link">(Github - shoe_company)</a>
@@ -94,38 +124,8 @@ function Projects() {
             <li>Parcel</li>
           </ul>
         </div>
-      
-        <div>
-          <div className="project-img-wrapper">
-            <span className="tooltip"><span></span><a target='_blank' href="https://tailwind-css-projects.vercel.app/">ShoeCompany <FaExternalLinkAlt /></a> </span>
-            <img src={shoe_company} alt="Shoe Company" />
-          </div>
-          <div className="connecting-line"><span></span></div>
-        </div>
-       
       </div>
 
-      <div className="project indic-product left">
-        <div>
-          <div className="project-img-wrapper">
-            <span className="tooltip"><span></span><a target='_blank' href="">Indic Products <FaExternalLinkAlt /></a> </span>
-            <img src={indic_products} alt="Explore Nation" />
-          </div>
-          <div className="connecting-line"><span></span></div>
-        </div>
-        <div className="project-intro">
-          <h3 className="project-title"><a target='_blank' href="">Indic Products</a></h3>
-          <a target='_blank' href="https://github.com/vijay-jadhav1997/react-projects/tree/main/explore-nations-project" className="github-link">(Github - explore_nation)</a>
-          <p className="project-details">This React application is designed to display information about all countries in the world. It utilizes a card layout for each country, allowing users to click on a card to view detailed information about that specific country.</p>
-          <ul className='tech-stack'>
-            <li>Python</li>
-            <li>Django</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS (ES6+)</li>
-          </ul>
-        </div>
-      </div>
 
       <div className="project explore-nation right tab">
         <div className="project-intro">

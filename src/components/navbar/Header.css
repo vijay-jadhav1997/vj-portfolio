@@ -1,4 +1,5 @@
 .header {
+  position: fixed;
   height: 5rem;
   width: 100%;
   max-width: 80rem;

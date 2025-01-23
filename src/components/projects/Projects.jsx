@@ -1,5 +1,6 @@
 import './Projects.css'
 import indicfood from '../../assets/images/projects/indicfood.webp'
+import blackWhiteLab from '../../assets/images/projects/black-white-lab.webp'
 import indicquiz from '../../assets/images/projects/quiz-app.webp'
 import explore_nation from '../../assets/images/projects/nation-app.webp'
 import shoe_company from '../../assets/images/projects/shoe-companyapp.webp'
@@ -12,6 +13,35 @@ function Projects() {
     <section id="projects" className="projects">
       <div className="central-line"></div>
       <h2>Latest Works</h2>
+      
+      <div className="project black-white-lab right">
+        <div className="project-intro">
+          <h3 className="project-title"><a target='_blank' href="https://black-white-lab.vercel.app/">Black White Lab</a></h3>
+          <a target='_blank' href="https://github.com/vijay-jadhav1997/black_white_lab" className="github-link">(Github - black_white_lab)</a>
+          <p className="project-details">A web application that allows users to upload colorful images, converts them to black-and-white (grayscale), and displays the converted image back to the user.</p>
+          <ul className='tech-stack'>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS (ES6+)</li>
+            <li>React.js</li>
+            <li>React Router DOM</li>
+            <li>Tailwind CSS</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Django Rest Framework</li>
+            <li>simple_jwt</li>
+            <li>vite</li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="project-img-wrapper">
+            <span className="tooltip"><span></span><a target='_blank' href="https://indicfood.vercel.app/">BlackWhiteLab <FaExternalLinkAlt /></a> </span>
+            <img src={blackWhiteLab} alt="BlackWhiteLab" />
+          </div>
+          <div className="connecting-line"><span></span></div>
+        </div>
+      </div>
       
       <div className="project indic-food left">
         <div>

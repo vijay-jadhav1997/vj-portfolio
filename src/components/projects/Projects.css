@@ -94,6 +94,11 @@
   transition: all 0.3s cubic-bezier(0.92, -0.03, 0.27, 1.92);;
 }
 
+#projects .project.black-white-lab .project-img-wrapper .tooltip {
+  background-color: #00d8ff;
+  color: #000;
+}
+
 #projects .project.indic-food .project-img-wrapper .tooltip {
   background-color: #d92879;
 }
@@ -130,6 +135,10 @@
   left: 50%;
   transform: rotate(45deg) translateX(-50%);
   z-index: -1;
+}
+
+#projects .project.black-white-lab .project-img-wrapper .tooltip span {
+  background-color: #00d8ff;
 }
 
 #projects .project.indic-food .project-img-wrapper .tooltip span {
@@ -219,6 +228,15 @@
   margin: 0.5rem 0 1rem;
   display: block;
 }
+  
+#projects .project.black-white-lab .project-intro .project-title a {
+  color: #00d8ff;
+}
+
+#projects .project.black-white-lab .project-intro .github-link {
+  color: #0bb9d7;
+}
+  
   
 #projects .project.indic-food .project-intro .project-title a {
   color: #d92879;
